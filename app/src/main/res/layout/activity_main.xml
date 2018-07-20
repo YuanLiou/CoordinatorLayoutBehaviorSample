@@ -28,4 +28,13 @@
         android:text="I'm a draggable text"
         />
 
+    <Button
+        android:id="@+id/main_activity_go_nest_scrolling_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Open NestedScrolling Page"
+        app:layout_behavior="@string/shadow_behavior"
+        />
+
 </android.support.design.widget.CoordinatorLayout>

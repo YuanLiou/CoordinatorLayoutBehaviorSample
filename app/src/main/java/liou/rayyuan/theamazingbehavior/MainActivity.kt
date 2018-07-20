@@ -5,6 +5,7 @@ import android.support.design.widget.CoordinatorLayout
 import android.support.v7.app.AppCompatActivity
 import android.util.TypedValue
 import android.view.ViewTreeObserver
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,5 +27,9 @@ class MainActivity : AppCompatActivity() {
                 main_activity_shadow_view.layoutParams = layoutParams
             }
         })
+
+        main_activity_go_nest_scrolling_page.setOnClickListener {
+            Toast.makeText(this, "Button Clicked", Toast.LENGTH_LONG).show()
+        }
     }
 }

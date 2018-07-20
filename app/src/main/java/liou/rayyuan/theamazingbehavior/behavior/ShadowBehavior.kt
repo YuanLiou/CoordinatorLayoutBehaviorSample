@@ -5,6 +5,7 @@ import android.support.design.widget.CoordinatorLayout
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.view.View
+import android.widget.Button
 import liou.rayyuan.theamazingbehavior.widget.DraggableTextView
 
 class ShadowBehavior : CoordinatorLayout.Behavior<View> {
@@ -21,6 +22,14 @@ class ShadowBehavior : CoordinatorLayout.Behavior<View> {
         val horizontalMargin = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1f, parent.resources.displayMetrics)
         val verticalMargin = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1f, parent.resources.displayMetrics)
 
+        if (child is Button) {
+            // Specific for Button type child
+            child.x = dependency.x + ((dependency.width - child.width) / 2)
+            child.y = dependency.y - child.height
+            return true
+        }
+
+        // Other type child
         // Change the child position
         child.x = dependency.x - horizontalMargin    // move to right
         child.y = dependency.y
