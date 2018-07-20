@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TheAmazingBehavior</string>
+    <string name="shadow_behavior" translatable="false">liou.rayyuan.theamazingbehavior.behavior.ShadowBehavior</string>
 </resources>
