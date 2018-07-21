@@ -17,7 +17,7 @@ class DraggableTextView : TextView {
 
     constructor(context: Context, attr: AttributeSet): super(context, attr)
 
-    constructor(context: Context, attr: AttributeSet, defStyleAttr: Int) : super(context, attr, defStyleAttr) {
+    constructor(context: Context, attr: AttributeSet, defStyleAttr: Int): super(context, attr, defStyleAttr) {
         isClickable = true
         slop = ViewConfiguration.get(context).scaledTouchSlop
     }

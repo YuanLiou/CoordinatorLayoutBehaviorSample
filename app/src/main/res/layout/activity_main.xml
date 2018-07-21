@@ -6,14 +6,30 @@
     android:id="@+id/main_activity_root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <View
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_activity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="4dp"
+            app:title="@string/app_name"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <liou.rayyuan.theamazingbehavior.widget.ShadowView
         android:id="@+id/main_activity_shadow_view"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@drawable/shadow"
-        app:layout_behavior="@string/shadow_behavior"
         tools:layout_width="100dp"
         tools:layout_height="100dp"
         />
@@ -23,8 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#FDBD2E"
-        android:textSize="24sp"
+        android:textSize="@dimen/draggable_text_size"
         android:padding="8dp"
+        android:layout_marginTop="200dp"
         android:text="I'm a draggable text"
         />
 
@@ -34,7 +51,6 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="Open NestedScrolling Page"
-        app:layout_behavior="@string/shadow_behavior"
         />
 
 </android.support.design.widget.CoordinatorLayout>
