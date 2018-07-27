@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sample_names">
+        <item>Janus</item>
+        <item>Chicago</item>
+        <item>Memphis</item>
+        <item>Millennium</item>
+        <item>Whistler</item>
+        <item>Longhorn</item>
+        <item>Blackcomb</item>
+        <item>Blue</item>
+        <item>Threshold</item>
+        <item>Redstone</item>
+        <item>Baraboo</item>
+        <item>Natal</item>
+        <item>O\'Hare</item>
+        <item>Spartan</item>
+    </string-array>
+</resources>

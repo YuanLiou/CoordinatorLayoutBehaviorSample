@@ -1,5 +1,6 @@
 package liou.rayyuan.theamazingbehavior
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.CoordinatorLayout
@@ -7,7 +8,6 @@ import android.support.v7.app.AppCompatActivity
 import android.util.TypedValue
 import android.view.*
 import android.widget.Button
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import liou.rayyuan.theamazingbehavior.behavior.ShadowBehavior
 import liou.rayyuan.theamazingbehavior.widget.DraggableTextView
@@ -43,7 +43,8 @@ class MainActivity : AppCompatActivity() {
         })
 
         main_activity_go_nest_scrolling_page.setOnClickListener {
-            Toast.makeText(this, "Button Clicked", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, ScrollingSampleActivity::class.java)
+            startActivity(intent)
         }
     }
 

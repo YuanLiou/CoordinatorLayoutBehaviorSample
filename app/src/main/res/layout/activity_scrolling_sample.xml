@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_scrolling_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:paddingBottom="?attr/actionBarSize"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_list"
+        />
+
+    <FrameLayout
+        android:id="@+id/activity_scrolling_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:background="@drawable/bottom_button"
+        app:layout_behavior="@string/move_up_and_down_behavior"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+            />
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

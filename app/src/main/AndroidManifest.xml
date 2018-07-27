@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ScrollingSampleActivity"
+            android:label="@string/scroll_sample_title"
+            android:theme="@style/NestScrollTheme"
+            />
+
     </application>
 
 </manifest>
