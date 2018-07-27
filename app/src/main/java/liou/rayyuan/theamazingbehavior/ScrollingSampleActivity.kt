@@ -1,6 +1,7 @@
 package liou.rayyuan.theamazingbehavior
 
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
@@ -21,6 +22,16 @@ class ScrollingSampleActivity : AppCompatActivity() {
 
         activity_scrolling_bottom_button.setOnClickListener {
             recyclerView.smoothScrollToPosition(0)
+        }
+
+        activity_scrolling_fab.setOnClickListener {
+            AlertDialog.Builder(this)
+                    .setTitle("Hi")
+                    .setMessage("Hope you like this effect. :D")
+                    .setPositiveButton("OK") { dialogInterface, _ -> dialogInterface.dismiss() }
+                    .setCancelable(true)
+                    .create()
+                    .show()
         }
     }
 

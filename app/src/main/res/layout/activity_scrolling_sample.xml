@@ -21,12 +21,28 @@
         tools:listitem="@layout/item_list"
         />
 
+    <ImageButton
+        android:id="@+id/activity_scrolling_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:background="@drawable/circlebutton"
+        android:src="@drawable/ic_setting"
+        app:layout_behavior="@string/fling_behavior"
+        />
+
     <FrameLayout
         android:id="@+id/activity_scrolling_bottom_button"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_gravity="bottom"
         android:clickable="true"
+        android:elevation="8dp"
         android:background="@drawable/bottom_button"
         app:layout_behavior="@string/move_up_and_down_behavior"
         >
